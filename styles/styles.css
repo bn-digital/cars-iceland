@@ -4,6 +4,7 @@
     --content-bg-color: #F2F4FF;
     --main-bg-color: #FFF;
     --white-text-color: #FFF;
+    --stamp-color: #25B700;
     --cubics: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -94,6 +95,7 @@ button {
                 height: 100%;
                 padding: 15px 23px;
                 cursor: pointer;
+                transition: border 300ms var(--cubics);
 
                 .step-number {
                     display: flex;
@@ -107,6 +109,7 @@ button {
                     color: var(--primary-color);
                     border: 1px solid #000000;
                     border-radius: 50%;
+                    transition: color 300ms var(--cubics);
                 }
 
                 .step-info-wrapper {
@@ -120,6 +123,7 @@ button {
                     font-size: 24px;
                     line-height: 0.92;
                     color: var(--primary-color);
+                    transition: color 250ms var(--cubics);
                 }
 
                 .step-description {
@@ -287,6 +291,120 @@ button {
 .step-wrapper#content2 {
     padding: 80px 60px 64px 48px;
 
+    .cars-card-list {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 12px;
+        grid-row-gap: 8px;
+
+        .cars-card-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 14px 11px;
+            border-radius: 6px;
+            background-color: var(--main-bg-color);
+
+            .car-name {
+                width: 105px;
+                height: 18px;
+                margin-bottom: 10px;
+                border-radius: 3px;
+                background-color: #EDEFF180;
+            }
+
+            .car-img {
+                width: 105px;
+                height: 75px;
+                margin-bottom: 10px;
+                border-radius: 6px;
+                background-color: #F6F7F8;
+            }
+
+            .car-description {
+                width: 81px;
+                height: 18px;
+                margin-bottom: 8px;
+                border-radius: 3px;
+                background-color: #EDEFF180;
+            }
+
+            .car-small-description {
+                width: 99px;
+                height: 9px;
+                margin-bottom: 10px;
+                border-radius: 3px;
+                background-color: #EDEFF180;
+            }
+
+            .car-card-btn {
+                width: 137px;
+                height: 22px;
+                border-radius: 20px;
+                background-color: #0062E033;
+            }
+        }
+    }
+
+    .cars-card-item.active {
+       transform: translateY(-18px);
+       background: linear-gradient(94.71deg, #0062E0 0.72%, #0094FF 103.21%);
+
+        .car-name-active {
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 0.92;
+            text-align: center;
+            color: var(--white-text-color);
+        }
+
+        .car-img-active{
+           margin-bottom: 8px;
+        }
+
+        .car-card-btn.active{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            font-size: 11.42px;
+            line-height: 0.92;
+            text-align: center;
+            background-color: var(--white-text-color);
+            color: var(--accent-color);
+        }
+    }
+
+    .cars-stamp-statistic {
+        position: absolute;
+        right: -37px;
+        bottom: 97px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 123px;
+        height: 123px;
+        background-color: var(--stamp-color);
+        border-radius: 50%;
+
+        .cars-qty {
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 0.92;
+            color: var(--white-text-color);
+        }
+
+        .statistic-item {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 0.92;
+            color: var(--white-text-color);
+        }
+    }
 }
 
 .step-wrapper#content1,
