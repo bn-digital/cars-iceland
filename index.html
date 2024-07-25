@@ -4,16 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental car</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"/>
     <link rel="stylesheet" href="styles/styles.css" />
-    <title>Rental car</title>
 </head>
 <body>
 <!--Main-->
-<div class="main">
+<main>
+    <div class="container">
+        <aside class="aside-container">
+            <p class="app-title">Easy Online Booking Process</p>
+            <h1 class="main-message-title">You’re seconds away from securing your Iceland car rental.</h1>
+            <ul class="steps-btn-list">
+                <li class="steps-btn-item">
+                    <input type="radio" id="step1" name="step" class="radio-btn" checked >
+                    <label for="step1" class="btn-label step-border">
 
-</div>
+                       <span class="step-number">1</span>
+                       <div class="step-info-wrapper">
+                       <h2 class="step-title">Select your travel days</h2>
+                       <p class="step-description">Want to relax in the Blue Lagoon during the summer or hunt the Northern Lights during the winter? Pick your travel days and hit ‘Search’.</p>
+                       </div>
+                    </label>
+                </li>
+                <li class="steps-btn-item">
+                    <input type="radio" id="step2" name="step" class="radio-btn">
+                    <label for="step2" class="btn-label step-border">
+                        <span class="step-number">2</span>
+                        <div class="step-info-wrapper">
+                        <h2 class="step-title">Choose your favorite ride</h2>
+                        <p class="step-description">Take a good look at our new vehicle fleet. From 4x4s & SUVs to electric and luxury vehicles, the choice is yours!</p>
+                        </div>
+                    </label>
+                </li>
+                <li class="steps-btn-item">
+                    <input type="radio" id="step3" name="step" class="radio-btn">
+                    <label for="step3" class="btn-label step-border">
+                        <span class="step-number">3</span>
+                        <div class="step-info-wrapper">
+                        <h2 class="step-title">Add your extras & insurances</h2>
+                        <p class="step-description">Feel at home on the road and don’t worry about a thing thanks to our comprehensive insurances and top extras.</p>
+                        </div>
+                    </label>
+                </li>
+                <li class="steps-btn-item">
+                    <input type="radio" id="step4" name="step" class="radio-btn">
+                    <label for="step4" class="btn-label step-border">
+                        <span class="step-number">4</span>
+                        <div class="step-info-wrapper">
+                        <h2 class="step-title">Complete your booking and fly to Iceland!</h2>
+                        <p class="step-description">All you need to do now is fill in your personal details and complete the online payment process. See you in Iceland!</p>
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </aside>
+        <section class="content-container">
+            <div class="step-wrapper" id="content1">
+                Hi
+            </div>
+            <div class="step-wrapper" id="content2">
+                Hello
+            </div>
+            <div class="step-wrapper" id="content3">
+                Hola
+            </div>
+            <div class="step-wrapper" id="content4">
+                Bonjour
+            </div>
+        </section>
+    </div>
+</main>
 </body>
 </html>
