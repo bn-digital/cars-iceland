@@ -82,7 +82,6 @@ button {
         flex-direction: column;
         gap: 20px;
 
-
         .steps-btn-item {
             border-radius: 6px;
             cursor: pointer;
@@ -169,24 +168,136 @@ button {
 }
 
 /*Steps content*/
+
 .content-container {
-    padding: 30px;
     border-radius: 6px;
     background-color: var(--content-bg-color);
 }
 
-.step-wrapper {
-    & #content1,
-    & #content2,
-    & #content3,
-    & #content4 {
-        display: none;
+/* First step content*/
+
+.step-wrapper#content1 {
+    padding: 100px 52px;
+
+    .calendar-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 78px 37px 45px 30px;
+        border-radius: 6px;
+        background-color: #FFFFFF;
+
+        .date-box {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+            padding: 26px;
+            border-radius: 6px;
+            background-color: #FFF;
+
+            .calendar-date {
+                display: flex;
+                align-items: center;
+                gap: 9px;
+                font-family: 'Helvetica Neue', sans-serif;
+
+                .day-number {
+                    font-weight: 700;
+                    font-size: 60px;
+                    line-height: 1.22;
+                }
+
+                .day-name{
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 1.22;
+                }
+            }
+
+            .date-info-wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+
+                .date-info-box {
+                    border-radius: 6px;
+
+                    &.small {
+                        width: 86px;
+                        height: 14px;
+                        background-color: #CBDFF8;
+                    }
+
+                    &.medium {
+                        width: 101px;
+                        height: 21px;
+                        background-color: #F6F7F8;
+                    }
+
+                    &.large {
+                        min-width: 136px;
+                        height: 21px;
+                        background-color: #F6F7F8;
+                    }
+                }
+            }
+
+            &.start-date {
+                background: linear-gradient(94.71deg, #0062E0 0.72%, #0094FF 103.21%);
+                box-shadow: 0 4px 10px 0 #0000001F;
+
+                & p{
+                    color: var(--white-text-color);
+                }
+            }
+
+            &.end-date {
+                position: relative;
+                border: 3px solid var(--accent-color);
+
+                & p{
+                    color: var(--primary-color);
+                }
+
+                .notification-wrapper {
+                    position: absolute;
+                    top: -37px;
+                    right: -23px;
+                    padding: 13px 10px;
+                    border-radius: 6px 6px 6px 0;
+                    background: #000000;
+                    box-shadow: 0 4px 10px 0 #0000001F;
+
+
+                    .notification-text{
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 1;
+                        text-align: center;
+                        color: var(--white-text-color);
+                    }
+                }
+            }
+        }
     }
 }
 
-#step1:checked ~ .step-wrapper #content1,
-#step2:checked ~ .step-wrapper #content2,
-#step3:checked ~ .step-wrapper #content3,
-#step4:checked ~ .step-wrapper #content4 {
-    display: block;
+/* Second step content*/
+
+.step-wrapper#content2 {
+    padding: 80px 60px 64px 48px;
+
 }
+
+.step-wrapper#content1,
+.step-wrapper#content3,
+.step-wrapper#content4 {
+        display: none;
+}
+
+/*#step1:checked ~ .step-wrapper #content1,*/
+/*#step2:checked ~ .step-wrapper #content2,*/
+/*#step3:checked ~ .step-wrapper #content3,*/
+/*#step4:checked ~ .step-wrapper #content4 {*/
+/*    display: block;*/
+/*}*/
