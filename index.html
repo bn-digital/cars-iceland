@@ -4,16 +4,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental car</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"/>
     <link rel="stylesheet" href="styles/styles.css" />
-    <title>Rental car</title>
 </head>
 <body>
 <!--Main-->
-<div class="main">
-
-</div>
+<main>
+    <div class="container">
+        <aside class="aside-container">
+            <p class="app-title">Easy Online Booking Process</p>
+            <h1 class="main-message-title">You’re seconds away from securing your Iceland car rental.</h1>
+            <ul class="steps-btn-list">
+                <li class="steps-btn-item">
+                    <input type="radio" id="step1" name="step" class="radio-btn" checked >
+                    <label for="step1" class="btn-label">
+                       <span class="step-number">1</span>
+                       <span class="step-info-wrapper">
+                       <span class="step-title">Select your travel days</span>
+                       <span class="step-description">Want to relax in the Blue Lagoon during the summer or hunt the Northern Lights during the winter? Pick your travel days and hit ‘Search’.</span>
+                       </span>
+                    </label>
+                </li>
+                <li class="steps-btn-item">
+                    <input type="radio" id="step2" name="step" class="radio-btn">
+                    <label for="step2" class="btn-label">
+                        <span class="step-number">2</span>
+                        <span class="step-info-wrapper">
+                        <span class="step-title">Choose your favorite ride</span>
+                        <span class="step-description">Take a good look at our new vehicle fleet. From 4x4s & SUVs to electric and luxury vehicles, the choice is yours!</span>
+                        </span>
+                    </label>
+                </li>
+                <li class="steps-btn-item">
+                    <input type="radio" id="step3" name="step" class="radio-btn">
+                    <label for="step3" class="btn-label">
+                        <span class="step-number">3</span>
+                        <span class="step-info-wrapper">
+                        <span class="step-title">Add your extras & insurances</span>
+                        <span class="step-description">Feel at home on the road and don’t worry about a thing thanks to our comprehensive insurances and top extras.</span>
+                        </span>
+                    </label>
+                </li>
+                <li class="steps-btn-item">
+                    <input type="radio" id="step4" name="step" class="radio-btn">
+                    <label for="step4" class="btn-label">
+                        <span class="step-number">4</span>
+                        <span class="step-info-wrapper">
+                        <span class="step-title">Complete your booking and fly to Iceland!</span>
+                        <span class="step-description">All you need to do now is fill in your personal details and complete the online payment process. See you in Iceland!</span>
+                        </span>
+                    </label>
+                </li>
+            </ul>
+        </aside>
+        <section class="content-container">
+            <article class="step-wrapper" id="content1">
+                <div class="calendar-wrapper">
+                <div class="date-box start-date">
+                    <div class="calendar-date">
+                        <p class="day-number">12</p>
+                        <div>
+                            <p class="day-name">FRI</p>
+                            <p class="day-name">DAY</p>
+                        </div>
+                    </div>
+                    <div class="date-info-wrapper">
+                        <div class="date-info-box small">
+                        </div>
+                        <div class="date-info-box medium">
+                        </div>
+                    </div>
+                    <div class="date-info-wrapper">
+                        <div class="date-info-box small">
+                        </div>
+                        <div class="date-info-box large">
+                        </div>
+                    </div>
+                </div>
+                    <img src="./images/arrowRight.svg" alt="arrow right">
+                <div class="date-box end-date">
+                    <div class="calendar-date">
+                        <p class="day-number">22</p>
+                        <div>
+                            <p class="day-name">SUN</p>
+                            <p class="day-name">DAY</p>
+                        </div>
+                    </div>
+                    <div class="date-info-wrapper">
+                        <div class="date-info-box small">
+                        </div>
+                        <div class="date-info-box medium">
+                        </div>
+                    </div>
+                    <div class="date-info-wrapper">
+                        <div class="date-info-box small">
+                        </div>
+                        <div class="date-info-box large">
+                        </div>
+                    </div>
+                    <div class="notification-wrapper">
+                     <p class="notification-text">10 Days selected</p>
+                    </div>
+                </div>
+                </div>
+            </article>
+            <article class="step-wrapper" id="content2">
+                <ul class="cars-card-list">
+                    <li class="cars-card-item"></li>
+                    <li class="cars-card-item"></li>
+                    <li class="cars-card-item"></li>
+                    <li class="cars-card-item"></li>
+                    <li class="cars-card-item"></li>
+                </ul>
+            </article>
+            <div class="step-wrapper" id="content3">
+                Hola
+            </div>
+            <div class="step-wrapper" id="content4">
+                Bonjour
+            </div>
+        </section>
+    </div>
+</main>
 </body>
 </html>
