@@ -51,11 +51,10 @@ button {
 
 .container{
     display: flex;
-    flex-direction: row-reverse;
     justify-content: center;
     gap: 40px;
     max-width: 1160px;
-    min-height: 590px;
+    min-height: 605px;
     margin: auto;
 }
 
@@ -92,7 +91,7 @@ button {
             border-radius: 6px;
             cursor: pointer;
 
-            .step-btn-link {
+            .btn-label{
                 display: flex;
                 align-items: center;
                 gap: 23px;
@@ -100,20 +99,30 @@ button {
                 height: 100%;
                 padding: 15px 23px;
                 cursor: pointer;
+                border: 3px solid #FFF;
+                border-radius: 6px;
                 transition: border 300ms var(--cubics);
 
-                .step-number {
+                .step-number-circle{
+                    position: relative;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     min-width: 40px;
                     height: 40px;
+                    border: 1px solid #000000;
+                    border-radius: 50%;
+                }
+
+                .step-number {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                     font-weight: 600;
                     font-size: 20px;
                     line-height: 1;
                     color: var(--primary-color);
-                    border: 1px solid #000000;
-                    border-radius: 50%;
                 }
 
                 .step-info-wrapper {
@@ -127,46 +136,13 @@ button {
                     font-size: 24px;
                     line-height: 0.92;
                     color: var(--primary-color);
-                    transition: color 250ms var(--cubics);
+                    transition: color 500ms var(--cubics);
                 }
 
                 .step-description {
                     display: none;
                 }
             }
-
-/*An active step*/
-             .step-btn-link.current {
-                padding: 15px 23px;
-                background: linear-gradient(#FFF, #FFF) padding-box,
-                linear-gradient(90deg, #0062E0 0%, #0094FF 100%) border-box;
-                border-radius: 6px;
-                border: 3px solid transparent;
-                cursor: pointer;
-
-                .step-number {
-                    min-width: 50px;
-                    height: 50px;
-                    font-size: 25px;
-                    line-height: 1;
-                    color: var(--white-text-color);
-                    border: none;
-                    background: linear-gradient(180deg, #0094FF 0%, #0062E0 100%);
-                }
-
-                .step-title {
-                    color: var(--accent-color);
-                }
-
-                .step-description {
-                    display: block;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 1.38;
-                    color: var(--primary-color);
-                }
-            }
-
             .radio-btn {
                 display: none;
             }
@@ -174,13 +150,72 @@ button {
     }
 }
 
+/*An active step*/
+
+.container:has(.radio-btn#step1:checked) .btn-label[for="step1"],
+.container:has(.radio-btn#step2:checked) .btn-label[for="step2"],
+.container:has(.radio-btn#step3:checked) .btn-label[for="step3"],
+.container:has(.radio-btn#step4:checked) .btn-label[for="step4"] {
+    padding: 15px 23px;
+    border: 3px solid var(--accent-color);
+    border-radius: 6px;
+    cursor: pointer;
+
+    .step-number-circle{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 50px;
+        height: 50px;
+        border: none;
+        background: linear-gradient(180deg, #0094FF 0%, #0062E0 100%);
+    }
+
+    .step-number {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 25px;
+        line-height: 1;
+        color: var(--white-text-color);
+    }
+
+    .step-title {
+        color: var(--accent-color);
+    }
+
+    .step-description {
+        display: block;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.38;
+        color: var(--primary-color);
+    }
+}
+
 /*Steps content*/
 
 .content-container {
     width: 608px;
-    height: 580px;
+    height: 605px;
     border-radius: 6px;
     background-color: var(--content-bg-color);
+
+    .step-wrapper {
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .radio-btn:checked + .step-wrapper {
+        display: block;
+    }
+
+    .radio-btn{
+        display: none;
+    }
 }
 
 /* First step content*/
@@ -195,6 +230,8 @@ button {
         padding: 78px 37px 45px 30px;
         border-radius: 6px;
         background-color: #FFFFFF;
+
+
 
         .date-box {
             display: flex;
@@ -237,10 +274,18 @@ button {
                         background-color: #CBDFF8;
                     }
 
+                    &.small.start{
+                        background-color: #3E93EE;
+                    }
+
                     &.medium {
                         width: 101px;
                         height: 21px;
                         background-color: #F6F7F8;
+                    }
+
+                    &.medium.start{
+                        background-color: #4B9AEE;
                     }
 
                     &.large {
@@ -248,12 +293,15 @@ button {
                         height: 21px;
                         background-color: #F6F7F8;
                     }
+
+                    &.large.start{
+                        background-color: #4BA1F2;
+                    }
                 }
             }
 
             &.start-date {
                 background: linear-gradient(94.71deg, #0062E0 0.72%, #0094FF 103.21%);
-                box-shadow: 0 4px 10px 0 #0000001F;
 
                 & p{
                     color: var(--white-text-color);
