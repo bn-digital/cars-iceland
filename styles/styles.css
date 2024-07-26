@@ -198,19 +198,26 @@ button {
 /*Steps content*/
 
 .content-container {
+    position: relative;
     width: 608px;
     height: 605px;
     border-radius: 6px;
     background-color: var(--content-bg-color);
 
     .step-wrapper {
-        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        opacity: 0;
         width: 100%;
         height: 100%;
+        transition: opacity 0ms var(--cubics);
     }
 
     .radio-btn:checked + .step-wrapper {
-        display: block;
+        opacity: 1;
+        transition: opacity 600ms var(--cubics);
     }
 
     .radio-btn{
