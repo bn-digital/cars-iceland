@@ -8,58 +8,55 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css" rel="stylesheet"/>
     <link rel="stylesheet" href="styles/styles.css" />
 </head>
 <body>
-<!--Main-->
 <main>
     <div class="container">
         <aside class="aside-container">
             <p class="app-title">Easy Online Booking Process</p>
             <h1 class="main-message-title">You’re seconds away from securing your Iceland car rental.</h1>
-            <ul class="steps-btn-list">
-                <li class="steps-btn-item">
-                    <input type="radio" id="step1" name="step" class="radio-btn" checked >
-                    <label for="step1" class="btn-label">
-                       <span class="step-number">1</span>
-                       <span class="step-info-wrapper">
-                       <span class="step-title">Select your travel days</span>
-                       <span class="step-description">Want to relax in the Blue Lagoon during the summer or hunt the Northern Lights during the winter? Pick your travel days and hit ‘Search’.</span>
-                       </span>
-                    </label>
-                </li>
-                <li class="steps-btn-item">
-                    <input type="radio" id="step2" name="step" class="radio-btn">
-                    <label for="step2" class="btn-label">
-                        <span class="step-number">2</span>
-                        <span class="step-info-wrapper">
-                        <span class="step-title">Choose your favorite ride</span>
-                        <span class="step-description">Take a good look at our new vehicle fleet. From 4x4s & SUVs to electric and luxury vehicles, the choice is yours!</span>
-                        </span>
-                    </label>
-                </li>
-                <li class="steps-btn-item">
-                    <input type="radio" id="step3" name="step" class="radio-btn">
-                    <label for="step3" class="btn-label">
-                        <span class="step-number">3</span>
-                        <span class="step-info-wrapper">
-                        <span class="step-title">Add your extras & insurances</span>
-                        <span class="step-description">Feel at home on the road and don’t worry about a thing thanks to our comprehensive insurances and top extras.</span>
-                        </span>
-                    </label>
-                </li>
-                <li class="steps-btn-item">
-                    <input type="radio" id="step4" name="step" class="radio-btn">
-                    <label for="step4" class="btn-label">
-                        <span class="step-number">4</span>
-                        <span class="step-info-wrapper">
-                        <span class="step-title">Complete your booking and fly to Iceland!</span>
-                        <span class="step-description">All you need to do now is fill in your personal details and complete the online payment process. See you in Iceland!</span>
-                        </span>
-                    </label>
-                </li>
-            </ul>
+            <nav>
+                <ul class="steps-btn-list">
+                    <li class="steps-btn-item">
+                        <a href="./index.html" class="step-btn-link current">
+                            <span class="step-number">1</span>
+                            <div class="step-info-wrapper">
+                                <h2 class="step-title">Select your travel days</h2>
+                                <p class="step-description">Want to relax in the Blue Lagoon during the summer or hunt the Northern Lights during the winter? Pick your travel days and hit ‘Search’.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="steps-btn-item">
+                        <a href="./step-two.html" class="step-btn-link">
+                            <span class="step-number">2</span>
+                            <div class="step-info-wrapper">
+                                <h2 class="step-title">Choose your favorite ride</h2>
+                                <p class="step-description">Take a good look at our new vehicle fleet. From 4x4s & SUVs to electric and luxury vehicles, the choice is yours!</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="steps-btn-item">
+                        <a href="./step-three.html" class="step-btn-link">
+                            <span class="step-number">3</span>
+                            <div class="step-info-wrapper">
+                                <h2 class="step-title">Add your extras & insurances</h2>
+                                <p class="step-description">Feel at home on the road and don’t worry about a thing thanks to our comprehensive insurances and top extras.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="steps-btn-item">
+                        <a href="./step-four.html" class="step-btn-link">
+                            <span class="step-number">4</span>
+                            <div class="step-info-wrapper">
+                                <h2 class="step-title">Complete your booking and fly to Iceland!</h2>
+                                <p class="step-description">All you need to do now is fill in your personal details and complete the online payment process. See you in Iceland!</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </aside>
         <section class="content-container">
             <article class="step-wrapper" id="content1">
@@ -112,66 +109,6 @@
                 </div>
                 </div>
             </article>
-            <article class="step-wrapper" id="content2">
-                <ul class="cars-card-list">
-                    <li class="cars-card-item">
-                        <div class="car-name"></div>
-                          <div class="car-img"></div>
-                         <div class="car-description"></div>
-                        <div class="car-small-description"></div>
-                        <button class="car-card-btn"></button>
-
-                    </li>
-                    <li class="cars-card-item active">
-                        <h2 class="car-name-active">Suzuki Jimny</h2>
-                        <img class="car-img-active" src="images/car.png" alt="car suzuki jimny">
-                        <div class="car-description"></div>
-                        <div class="car-small-description"></div>
-                        <button class="car-card-btn active">Book Now</button>
-                    </li>
-                    <li class="cars-card-item">
-                        <div class="car-name"></div>
-                          <div class="car-img"></div>
-                         <div class="car-description"></div>
-                        <div class="car-small-description"></div>
-                        <button class="car-card-btn"></button>
-
-                    </li>
-                    <li class="cars-card-item">
-                        <div class="car-name"></div>
-                          <div class="car-img"></div>
-                         <div class="car-description"></div>
-                        <div class="car-small-description"></div>
-                        <button class="car-card-btn"></button>
-
-                    </li>
-                    <li class="cars-card-item">
-                        <div class="car-name"></div>
-                          <div class="car-img"></div>
-                         <div class="car-description"></div>
-                        <div class="car-small-description"></div>
-                        <button class="car-card-btn"></button>
-
-                    </li>
-                    <li class="cars-card-item">
-                        <div class="car-name"></div>
-                          <div class="car-img"></div>
-                         <div class="car-description"></div>
-                        <div class="car-small-description"></div>
-                        <button class="car-card-btn"></button>
-                    </li>
-                    <div class="cars-stamp-statistic">
-                        <h3 class="cars-qty">+52</h3>
-                        <h4 class="statistic-item">VEHICLES</h4>
-                    </div>
-                </ul>
-            </article>
-            <div class="step-wrapper" id="content3">
-                Hola
-            </div>
-            <div class="step-wrapper" id="content4">
-                Bonjour
-            </div>
         </section>
     </div>
 </main>
