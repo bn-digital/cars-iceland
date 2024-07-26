@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"/>
     <link rel="stylesheet" href="styles/styles.css" />
 </head>
 <body>
@@ -20,7 +20,7 @@
             <nav>
                 <ul class="steps-btn-list">
                     <li class="steps-btn-item">
-                        <a href="./index.html" class="step-btn-link current">
+                        <a href="./index.html" class="step-btn-link">
                             <span class="step-number">1</span>
                             <div class="step-info-wrapper">
                                 <h2 class="step-title">Select your travel days</h2>
@@ -29,7 +29,7 @@
                         </a>
                     </li>
                     <li class="steps-btn-item">
-                        <a href="./step-two.html" class="step-btn-link">
+                        <a href="./step-two.html" class="step-btn-link current">
                             <span class="step-number">2</span>
                             <div class="step-info-wrapper">
                                 <h2 class="step-title">Choose your favorite ride</h2>
@@ -59,54 +59,58 @@
             </nav>
         </aside>
         <section class="content-container">
-            <article class="step-wrapper" id="content1">
-                <div class="calendar-wrapper">
-                <div class="date-box start-date">
-                    <div class="calendar-date">
-                        <p class="day-number">12</p>
-                        <div>
-                            <p class="day-name">FRI</p>
-                            <p class="day-name">DAY</p>
-                        </div>
-                    </div>
-                    <div class="date-info-wrapper">
-                        <div class="date-info-box small">
-                        </div>
-                        <div class="date-info-box medium">
-                        </div>
-                    </div>
-                    <div class="date-info-wrapper">
-                        <div class="date-info-box small">
-                        </div>
-                        <div class="date-info-box large">
-                        </div>
-                    </div>
-                </div>
-                    <img src="./images/arrowRight.svg" alt="arrow right">
-                <div class="date-box end-date">
-                    <div class="calendar-date">
-                        <p class="day-number">22</p>
-                        <div>
-                            <p class="day-name">SUN</p>
-                            <p class="day-name">DAY</p>
-                        </div>
-                    </div>
-                    <div class="date-info-wrapper">
-                        <div class="date-info-box small">
-                        </div>
-                        <div class="date-info-box medium">
-                        </div>
-                    </div>
-                    <div class="date-info-wrapper">
-                        <div class="date-info-box small">
-                        </div>
-                        <div class="date-info-box large">
-                        </div>
-                    </div>
-                    <div class="notification-wrapper">
-                     <p class="notification-text">10 Days selected</p>
-                    </div>
-                </div>
+            <article class="step-wrapper" id="content2">
+                <ul class="cars-card-list">
+                    <li class="cars-card-item">
+                        <div class="car-name"></div>
+                        <div class="car-img"></div>
+                        <div class="car-description"></div>
+                        <div class="car-small-description"></div>
+                        <button class="car-card-btn"></button>
+
+                    </li>
+                    <li class="cars-card-item active">
+                        <h2 class="car-name-active">Suzuki Jimny</h2>
+                        <img class="car-img-active" src="images/car.png" alt="car suzuki jimny">
+                        <div class="car-description"></div>
+                        <div class="car-small-description"></div>
+                        <button class="car-card-btn active">Book Now</button>
+                    </li>
+                    <li class="cars-card-item">
+                        <div class="car-name"></div>
+                        <div class="car-img"></div>
+                        <div class="car-description"></div>
+                        <div class="car-small-description"></div>
+                        <button class="car-card-btn"></button>
+
+                    </li>
+                    <li class="cars-card-item">
+                        <div class="car-name"></div>
+                        <div class="car-img"></div>
+                        <div class="car-description"></div>
+                        <div class="car-small-description"></div>
+                        <button class="car-card-btn"></button>
+
+                    </li>
+                    <li class="cars-card-item">
+                        <div class="car-name"></div>
+                        <div class="car-img"></div>
+                        <div class="car-description"></div>
+                        <div class="car-small-description"></div>
+                        <button class="car-card-btn"></button>
+
+                    </li>
+                    <li class="cars-card-item">
+                        <div class="car-name"></div>
+                        <div class="car-img"></div>
+                        <div class="car-description"></div>
+                        <div class="car-small-description"></div>
+                        <button class="car-card-btn"></button>
+                    </li>
+                </ul>
+                <div class="cars-stamp-statistic">
+                    <h3 class="cars-qty">+52</h3>
+                    <h4 class="statistic-item">VEHICLES</h4>
                 </div>
             </article>
         </section>

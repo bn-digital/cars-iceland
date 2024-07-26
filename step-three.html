@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"/>
     <link rel="stylesheet" href="styles/styles.css" />
 </head>
 <body>
@@ -20,7 +20,7 @@
             <nav>
                 <ul class="steps-btn-list">
                     <li class="steps-btn-item">
-                        <a href="./index.html" class="step-btn-link current">
+                        <a href="./index.html" class="step-btn-link">
                             <span class="step-number">1</span>
                             <div class="step-info-wrapper">
                                 <h2 class="step-title">Select your travel days</h2>
@@ -38,7 +38,7 @@
                         </a>
                     </li>
                     <li class="steps-btn-item">
-                        <a href="./step-three.html" class="step-btn-link">
+                        <a href="./step-three.html" class="step-btn-link current">
                             <span class="step-number">3</span>
                             <div class="step-info-wrapper">
                                 <h2 class="step-title">Add your extras & insurances</h2>
@@ -59,54 +59,46 @@
             </nav>
         </aside>
         <section class="content-container">
-            <article class="step-wrapper" id="content1">
-                <div class="calendar-wrapper">
-                <div class="date-box start-date">
-                    <div class="calendar-date">
-                        <p class="day-number">12</p>
+            <article class="step-wrapper" id="content3">
+                <div class="cars-features-wrapper">
+                    <div class="cars-features-item1">
+                        <img src="./images/carFeature.png" alt="car is riding through the puddles ">
                         <div>
-                            <p class="day-name">FRI</p>
-                            <p class="day-name">DAY</p>
+                            <h3 class="feature-title">Liability Waiver</h3>
+                            <div class="feature-info"></div>
+                            <div class="feature-description"></div>
+                            <button class="add-btn">Add</button>
                         </div>
                     </div>
-                    <div class="date-info-wrapper">
-                        <div class="date-info-box small">
+                    <div class="cars-features-item2">
+                        <div class="feature-img">
                         </div>
-                        <div class="date-info-box medium">
-                        </div>
-                    </div>
-                    <div class="date-info-wrapper">
-                        <div class="date-info-box small">
-                        </div>
-                        <div class="date-info-box large">
-                        </div>
-                    </div>
-                </div>
-                    <img src="./images/arrowRight.svg" alt="arrow right">
-                <div class="date-box end-date">
-                    <div class="calendar-date">
-                        <p class="day-number">22</p>
                         <div>
-                            <p class="day-name">SUN</p>
-                            <p class="day-name">DAY</p>
+                            <div class="feature-title default"></div>
+                            <div class="feature-info default"></div>
+                            <div class="add-btn default"></div>
                         </div>
                     </div>
-                    <div class="date-info-wrapper">
-                        <div class="date-info-box small">
+                    <div class="cars-features-item3">
+                        <img class="wifi-img" src="./images/wifi.png" alt="part of wifi router">
+                        <div class="wifi-info-wrapper">
+                            <h3 class="feature-title wifi">Wifi</h3>
+                            <div class="feature-info wifi"></div>
                         </div>
-                        <div class="date-info-box medium">
-                        </div>
+                        <button class="add-btn wifi">Add</button>
                     </div>
-                    <div class="date-info-wrapper">
-                        <div class="date-info-box small">
+                    <div class="cars-features-item4">
+                        <div class="cars-features-img small"></div>
+                        <div class="feature-info-wrapper small">
+                            <div class="feature-title small"></div>
+                            <div class="feature-info small"></div>
                         </div>
-                        <div class="date-info-box large">
-                        </div>
+                        <div class="add-btn small"></div>
                     </div>
-                    <div class="notification-wrapper">
-                     <p class="notification-text">10 Days selected</p>
+                    <div class="features-stamp-statistic">
+                        <h3 class="text-free">FREE</h3>
+                        <h4 class="text-insurance">INSURANCE</h4>
                     </div>
-                </div>
                 </div>
             </article>
         </section>
